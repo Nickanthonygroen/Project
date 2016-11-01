@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+body {
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 1em;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+section,
+img,
+p {
+    margin: auto;
+    width: 25em;
+    margin-top: 5em;
+    padding-bottom: 3em;
+    color: white;
+    text-align: center;
+}
+
+p {
+    margin-top: -1em;
+}
+
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 0%, 1%, 0.8);
+    max-width: 30em;
+    margin: auto;
+    border-radius: 2em;
+
+}
+
+
+legend {
+    padding: 2em 0 1em 2em;
+    position: absolute;
+    margin-top: -3em;
+    margin-bottom: 6em;
+    width: 28em;
+    height: 2em;
+    background-color: white;
+    color: #02D66C;
+    text-transform: uppercase;
+}
+
+fieldset,
+input {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 1em;
+}
+
+li > input {
+    float: right;
+    background-color: transparent;
+    text-align: right;
+    font-family: 'Nexa light', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+ul {
+    margin-top: 5em;
+    list-style: none;
+}
+
+li {
+    margin: 2em;
+    padding-bottom: 2em;
+    border-bottom: solid;
+    border-bottom-color: lightslategrey;
+}
+
+fieldset > input {
+    font-size: 0.8em;
+    border-radius: 1.2em;
+    padding: 0.9em 5em;
+    margin: -2em auto 1em auto;
+}
+
+li > input:focus {
+    color: white;
+    outline: none;
+    font-size: 1.1em;
+    transition:all 0.3s ease;
+}
+
+fieldset > input:focus {
+    font-family: 'Nexa Bold';
+    background-color: white;
+    color: #02D66C;
+    outline: none;
+    font-size: 1em;
+    transition:all 0.3s ease;
+}

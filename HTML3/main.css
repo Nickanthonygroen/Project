@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
+#dropdown:hover {
+    transition: all .3s ease;
+    transform: scale(1.2)
+}
+
+#dropdown:active {
+    transition: all .3s ease;
+    transform: rotate(180deg);
+}
+
+
+
+/*DESKTOP*/
+
+@media screen and (max-width: 120em) {
+
+    body {
+        max-width: 80em;
+        margin: auto;
+        background-color: #ededed;
+    }
+    header a {
+        display: inline-block;
+        font-family: "Nexa Bold";
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+        margin-top: 23em;
+        padding: 1.4em;
+        position: absolute;
+        margin-left: 12em;
+    }
+    main a {
+        background-color: #e73a6a;
+        border-radius: 1em;
+        color: white;
+        display: inline-block;
+        font-family: "Nexa Bold";
+        font-size: 0.8em;
+        margin-top: 2em;
+        padding: 1.4em;
+        position: absolute;
+        margin-left: 4em;
+    }
+    main a:hover {
+        background: #020202;
+        color: #e73a6a;
+        border-color: #e73a6a;
+        padding: 1.7em;
+        transition: all .4s ease;
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+    header img {
+        flex-direction: row;
+    }
+
+    #logo {
+        height: 2.5em;
+        margin-top: 0.9em;
+        margin-left: -2em;
+    }
+    header img:nth-child(3) {
+        height: 1em;
+        padding: 1.3em;
+        order: 1;
+        margin-top: 0.3em;
+    }
+    header section {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 4.3em;
+        margin-right: -4.1em;
+        background-color: #e62d2c;
+        height: 26.7em;
+        width: 100%;
+        transition: all .3s ease;
+        opacity: 0.9;
+    }
+    header section:hover {
+        opacity: 1;
+    }
+    .menu{
+        display: none;
+    }
+    header section img {
+        margin-left: 5em;
+        margin-top: 2.5em;
+        position: relative;
+        max-height: 20em;
+        min-height: 10em;
+        min-width: 20em;
+    }
+    h1 {
+        font-family: "Nexa Bold", sans-serif;
+        padding-bottom: 1em;
+    }
+    h2 {
+        font-family: "Nexa Bold", sans-serif;
+        padding-bottom: 1em;
+    }
+    h3 {
+        color: #e73a6a;
+        font-family: "Nexa Bold", sans-serif;
+        font-size: 1em;
+        padding-bottom: 1em;
+    }
+    main {
+        border-left: solid;
+        padding-top: 3em;
+        padding-left: 1em;
+        margin-left: 35em;
+        background-color: #fff;
+    }
+    main article {
+        margin: 0 3em 3em 3em;
+        max-width: 40em;
+        min-width: 21em;
+        padding-bottom: 2em;
+        border-bottom: solid;
+        border-bottom-color: #202020;
+        transition: all .3s ease-in-out;
+    }
+    main article:last-child {
+        border-style: none;
+    }
+    main img:nth-of-type(1) {
+        margin: 1em 1em 1em 0em;
+    }
+    main img {
+        margin: 1em;
+        width: 4em;
+        transition: all .3s ease-in-out;
+    }
+
+    p {
+        font-family: 'Nexa Light', sans-serif;
+        font-size: 1.05em;
+        line-height: 1.3em;
+        margin-bottom: 1em;
+    }
+    aside {
+        margin-top: 4.3em;
+        display: flex;
+        flex-direction: row;
+        width: 40em;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+    nav {
+        width: 15em;
+        height: 60em;
+        background-color: #202020;
+        z-index: 2;
+    }
+    legend {
+        font-family: 'Nexa Bold', sans-serif;
+        text-transform: uppercase;
+        color: #e73a6a;
+        font-size: 1.3em;
+        padding-bottom: 1em;
+    }
+    form {
+        margin-top: 0em;
+        width: 20em;
+        height: 60em;
+        background-color: #fff;
+    }
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        margin: 29.8em auto;
+        width: 16em;
+        border: 0;
+    }
+    label {
+        font-family: "Nexa Bold", sans-serif;
+        text-transform: uppercase;
+        padding: 1em 0 1em 0;
+    }
+    input {
+        font-size: 3em;
+    }
+    ul {
+        margin: 2em 3em 3em 3em;
+    }
+    li {
+        padding-top: 1em;
+        padding-bottom: 0.7em;
+        list-style: none;
+        border-bottom: solid;
+        border-color: #e73a6a;
+    }
+    nav a {
+        font-size: 1.3em;
+        font-family: "Nexa Bold";
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 2em;
+        text-decoration: none;
+    }
+    li:nth-last-child(1) {
+        margin-top: 43em;
+        border-top: solid;
+        border-color: #e73a6a;
+        border-bottom: none;
+    }
+form img{
+        top:-20em;
+    }
+}
+
+
+/*TABLET*/
+
+@media screen and (max-width: 60em) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+    }
+    header img {}
+    #menu {
+        display: flex;
+        width: 3em;
+    }
+    header img:nth-child(3) {
+        order: 0;
+        height: 1em;
+        padding: 1.3em;
+    }
+    header section {
+        margin-top: 0;
+        margin-left: 0;
+        background-color: #e62d2c;
+        height: 26.7em;
+    }
+    main {
+        margin-left: 20em;
+        background-color: #fff;
+    }
+    main article {
+        width: 60%;
+        max-width: 32em;
+        min-width: 28em;
+    }
+    aside {
+        display: flex;
+        flex-direction: row;
+        height: 20em;
+        position: absolute;
+        top: 0;
+    }
+    nav {
+        position: absolute;
+        left: -50em;
+        width: 20em;
+        height: 60em;
+        background-color: #202020;
+    }
+    form {
+        margin-top: 26.75em;
+        width: 20em;
+        height: 30em;
+        background-color: #fff;
+    }
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        margin: 2.8em auto;
+        width: 16em;
+        border: 0;
+    }
+}
+
+
+/*MOBIEL*/
+
+@media screen and (max-width: 50em) {
+    header {
+        height: 30em;
+        background-color: #fff;
+        margin-left: 0;
+    }
+    main {
+        border-left: none;
+        margin-top: 1em;
+        margin-left: 0;
+        width: 100%;
+        background-color:
+    }
+    main article {
+        margin-left: 0.3em;
+        width: 80%;
+        max-width: 37em;
+        min-width: 20em;
+    }
+    aside#sidemenu {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 10em;
+        left: -19.9em;
+        margin-top: 11.1em;
+        position: absolute;
+        top: 0;
+        transition: all .3s ease-in-out;
+
+    }
+
+    aside#sidemenu.open {
+        left: 0;
+    }
+    nav {
+        margin-top: 20em;
+        position: absolute;
+        left: 0;
+        width: 20em;
+        height: 22em;
+        background-color: #202020;
+        z-index: 3;
+
+    }
+    fieldset{
+        margin-left: 3em;
+    }
+    form {
+        margin-top: 30em;
+        width: 20em;
+        height: 30em;
+        background-color: #202020;
+        z-index: 2;
+    }
+    label {
+        font-family: "Nexa Bold", sans-serif;
+        text-transform: uppercase;
+        padding: 1em 0 1em 0;
+        color: white;
+    }
+    input {
+        color: white;
+        font-size: 3em;
+
+
+    }
+
+    ul {
+
+        margin-top: 10em;
+        margin: 2em 3em 3em 3em;
+    }
+    li {
+
+        padding-top: 1em;
+        padding-bottom: 0.7em;
+        list-style: none;
+        border-bottom: solid;
+        border-color: #e73a6a;
+    }
+    nav a {
+        font-size: 1.3em;
+        font-family: "Nexa Bold";
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 2em;
+        text-decoration: none;
+    }
+
+    nav a:hover{
+        color:#e73a6a;
+    }
+    li:nth-last-child(1) {
+        margin-top: 5em;
+        border-top: solid;
+        border-color: #e73a6a;
+        border-bottom: none;
+    }
+
+    form img{
+        position: absolute;
+        margin: 2.7em
+    }
+}

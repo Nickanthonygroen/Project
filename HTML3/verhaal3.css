@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+
+@media screen and (max-width: 120em) {
+
+section {
+    background-image: url(images/KlumperBeven1-04.png);
+    background-size: cover;
+    display: block;
+    margin: auto;
+    background-color: black;
+    width: 70em;
+    height: 100em;
+}
+}
+
+@media screen and (max-width: 60em) {
+
+section {
+    background-image: url(images/KlumperBeven1-05.png);
+    background-size: cover;
+    display: block;
+    margin: auto;
+    background-color: black;
+   width: 48em;
+    height: 65em;
+}
+}
+
+@media screen and (max-width: 40em) {
+
+section {
+    background-image: url(images/KlumperBeven1-06.png);
+    background-size: cover;
+    display: block;
+    margin: auto;
+    background-color: black;
+        width: 23em;
+    height: 60em;
+}
+}
